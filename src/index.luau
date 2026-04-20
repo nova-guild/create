@@ -78,13 +78,13 @@ end
 local function buildLuauRc(registeredDir: string)
     registeredDir = registeredDir:gsub("/+$", "")
 
-    local luaurcPath = `{templatesPath}/{RUNTIMES[state.runtime]}/.luaurc`
+    local luaurcPath = `{templatesPath}/{RUNTIMES[state.runtime]}/luaurc.json`
     local decoded = serde.decode("json", fs.readFile(luaurcPath))
 
     if registeredDir == "." then
         decoded.aliases.c = process.cwd
     else
-        decoded.aliases.c = process.cwd .. registeredDir
+        decoded.aliases.c = process.cwd .. registeredDir .. "/"
     end
     
     state.luaurcContent = serde.encode("json", decoded)
