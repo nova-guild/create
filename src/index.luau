@@ -4,10 +4,10 @@ local fs = require("@lune/fs")
 local stdio = require("@lune/stdio")
 
 -- Paths
-local rootDir = (debug.info(1, "s"):gsub("^@", ""):gsub("[^/\\]+$", ""):gsub("[^/\\]+[/\\]$", ""))
+local rootDir = (_G.PESDE_ROOT :: string) .. "/"
 local templatesPath = `{rootDir}templates`
 local mainPath = `{templatesPath}/main`
-local pesdePath = `{templatesPath}/pesde.toml`
+local pesdePath = `{templatesPath}/pesde.template.toml`
 
 -- Constants
 local RUNTIMES = { "zune", "lune", "lute" }
