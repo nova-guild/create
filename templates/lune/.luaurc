@@ -1,0 +1,7 @@
+{
+  "aliases": {
+    "lune": "~/.lune/.typedefs/0.10.4/",
+    "nova": "./lune_packages/nova",
+    "pkg": "./lune_packages/"
+  }
+}

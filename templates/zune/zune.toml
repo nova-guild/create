@@ -1,0 +1,15 @@
+# Zune Configuration
+
+[workspace]
+cwd = "."
+ 
+[workspace.scripts]
+start = "src/main"
+
+[runtime.debug]
+detailed_error = true
+
+[runtime.luau.options]
+debug_level = 2
+optimization_level = 1
+native_code_gen = true

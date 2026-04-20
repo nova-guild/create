@@ -1,0 +1,13 @@
+name = "name/your_project"
+version = "0.1.0"
+license = "MIT"
+private = true
+
+[target]
+environment = "lune"
+
+[dependencies]
+nova = { name = "bizwiz3/nova", version = "^0.5.1" }
+
+[indices]
+default = "https://github.com/pesde-pkg/index"

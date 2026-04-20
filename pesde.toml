@@ -1,0 +1,24 @@
+name = "nova/create"
+version = "0.1.0"
+description = "A project scaffolding CLI for the Nova web framework. Run a single command and get a fully structured Nova project."
+authors = ["Nova Guild (https://github.com/nova-guild)"]
+license = "MIT"
+repository = "https://github.com/nova-guild/create"
+private = false
+includes =[
+    "pesde.toml",
+    "README.md",
+    "LICENSE",
+    "src/**/*.luau",
+    "templates/"
+]
+
+[target]
+environment = "lune"
+bin = "src/index.luau"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[dependencies]
+

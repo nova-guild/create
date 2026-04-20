@@ -1,0 +1,6 @@
+{
+  "aliases": {
+    "nova": "./lune_packages/nova",
+    "pkg": "./lune_packages/"
+  }
+}
