@@ -1,0 +1,15 @@
+std = "luau"
+exclude = ["luau_packages/**", "lune_packages/**"]
+
+[rules]
+suspicious_reverse_loop = "deny"
+incorrect_standard_library_use = "deny"
+shadowing = "warn"
+undefined_variable = "deny"
+
+empty_if = "warn"
+almost_swapped = "deny"
+duplicate_keys = "deny"
+
+unused_variable = "warn"
+global_usage = "allow"

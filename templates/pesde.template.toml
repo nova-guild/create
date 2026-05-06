@@ -7,7 +7,9 @@ private = true
 environment = "lune"
 
 [dependencies]
-nova = { name = "bizwiz3/nova", version = "^0.5.1" }
+nova = { name = "bizwiz3/nova", version = "^0.5.7" }
+stylua = { name = "pesde/stylua", version = "^2.4.1" }
+selene = { name = "pesde/selene", version = "^0.30.1" }
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
